@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "process.h": "c",
+        "scheduler.h": "c"
+    },
+    "C_Cpp.default.compileCommands": "/home/client/Desktop/OS_Simulation/builddir/compile_commands.json",
+    "C_Cpp.default.configurationProvider": "mesonbuild.mesonbuild"
+}
