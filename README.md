@@ -16,6 +16,27 @@ Ushbu loyiha C dasturlash tilida yozilgan mini operatsion tizim simulyatsiyasidi
   - Shortest Job First (SJF)
 - Jarayon holatlari: NEW, READY, RUNNING, FINISHED
 
+## Scheduler Algoritmlari
+
+MiniOS uch xil jarayon rejalashtirish algoritmini qo‘llaydi:
+
+1. **Round-Robin (RR)**
+   - Har bir jarayonga **kvant vaqt** ajratiladi.
+   - Jarayon o‘z kvantini ishlagach, navbatdagi jarayonga o‘tadi.
+   - Har bir READY holatidagi jarayon navbat bilan ishlaydi.
+   - Preemptive bo‘lmagan simple RR hozirda qo‘llanilgan.
+
+2. **First-Come First-Served (FCFS)**
+   - Birinchi yaratilgan jarayon birinchi bajariladi.
+   - Jarayonning tugash vaqti ketma-ketlikni belgilaydi.
+   - Non-preemptive: bir jarayon ishlayotganda boshqa jarayon ishlay olmaydi.
+
+3. **Shortest Job First (SJF)**
+   - Eng qisqa ish (burst time) talab qiladigan jarayon birinchi ishlaydi.
+   - READY yoki NEW holatidagi jarayonlar ichidan eng qisqa qoldiq vaqtga ega jarayon tanlanadi.
+   - Non-preemptive variant qo‘llanadi, ya’ni jarayon ishga tushgandan keyin tugamaguncha davom etadi.
+
+
 ### Fayl tizimi (Xotirada)
 - Buyruqlar: `touch`, `ls`, `ls -l`, `cat`, `write`, `rm`
 - Fayl nomi, mazmuni, o‘lchami, yaratilgan va o‘zgartirilgan vaqti saqlanadi
